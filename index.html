@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEBULAB | Onde ideias ganham forma</title>
+
+    <meta
+        name="description"
+        content="NEBULAB — plataforma para criar, planejar e construir personagens e cosplays."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- FUNDO -->
+    <div class="space-background"></div>
+    <div class="stars"></div>
+    <div class="stars stars-2"></div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <a href="#inicio" class="logo">
+            <span>✦</span>
+            NEBULAB
+        </a>
+
+        <nav class="nav" id="nav">
+
+            <a href="#inicio">Início</a>
+            <a href="#criar">Criar</a>
+            <a href="#personagens">Personagens</a>
+            <a href="#construir">Construir</a>
+            <a href="#orcamento">Orçamento</a>
+            <a href="#constelacao">Constelação</a>
+
+        </nav>
+
+        <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Abrir menu"
+        >
+            ☰
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-text">
+
+                <div class="tag">
+                    ✦ LABORATÓRIO CRIATIVO DE PERSONAGENS
+                </div>
+
+                <h1>
+                    Transforme sua
+                    <span>imaginação</span>
+                    em um personagem.
+                </h1>
+
+                <p>
+                    Crie, planeje e construa seu cosplay.
+                    Seja um personagem existente ou uma criação
+                    totalmente sua.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#criar"
+                        class="button primary"
+                    >
+                        ✨ Criar meu personagem
+                    </a>
+
+                    <a
+                        href="#personagens"
+                        class="button secondary"
+                    >
+                        🎭 Encontrar personagem
+                    </a>
+
+                </div>
+
+                <div class="steps">
+
+                    <div>
+                        <strong>01</strong>
+                        <span>Imagine</span>
+                    </div>
+
+                    <div>
+                        <strong>02</strong>
+                        <span>Planeje</span>
+                    </div>
+
+                    <div>
+                        <strong>03</strong>
+                        <span>Construa</span>
+                    </div>
+
+                    <div>
+                        <strong>04</strong>
+                        <span>Transforme</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PLANETA -->
+
+            <div class="hero-visual">
+
+                <div class="orbit orbit-1"></div>
+                <div class="orbit orbit-2"></div>
+
+                <div class="planet">
+
+                    <div class="planet-light">
+                        ✦
+                    </div>
+
+                </div>
+
+                <div class="floating-card card-1">
+                    🎭
+                    <span>PERSONAGEM</span>
+                </div>
+
+                <div class="floating-card card-2">
+                    🛠️
+                    <span>CONSTRUÇÃO</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CRIAR ================= -->
+
+        <section class="section" id="criar">
+
+            <div class="section-title">
+
+                <span class="number">01</span>
+
+                <div>
+
+                    <span class="mini-title">
+                        LABORATÓRIO DE CRIAÇÃO
+                    </span>
+
+                    <h2>
+                        De uma ideia para um personagem.
+                    </h2>
+
+                    <p>
+                        Escolha entre criar um personagem
+                        original ou recriar alguém que já existe.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="creator">
+
+                <div class="creator-menu">
+
+                    <button
+                        class="creator-option active"
+                        data-type="original"
+                    >
+
+                        <span>✨</span>
+
+                        <div>
+                            <strong>Personagem original</strong>
+
+                            <small>
+                                Crie algo totalmente seu.
+                            </small>
+                        </div>
+
+                    </button>
+
+
+                    <button
+                        class="creator-option"
+                        data-type="existing"
+                    >
+
+                        <span>🎭</span>
+
+                        <div>
+                            <strong>Personagem existente</strong>
+
+                            <small>
+                                Recrie um personagem.
+                            </small>
+                        </div>
+
+                    </button>
+
+                </div>
+
+
+                <div class="creator-form">
+
+                    <label for="name">
+                        Nome do personagem
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Ex.: Luna, guerreira estelar..."
+                    >
+
+
+                    <label for="description">
+                        O que você imaginou?
+                    </label>
+
+                    <textarea
+                        id="description"
+                        placeholder="Descreva roupa, cabelo, cores, acessórios, estilo..."
+                    ></textarea>
+
+
+                    <div class="form-columns">
+
+                        <div>
+
+                            <label for="level">
+                                Seu nível
+                            </label>
+
+                            <select id="level">
+
+                                <option value="Iniciante">
+                                    🌱 Iniciante
+                                </option>
+
+                                <option value="Intermediário">
+                                    🛠️ Intermediário
+                                </option>
+
+                                <option value="Avançado">
+                                    ⚡ Avançado
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="creatorBudget">
+                                Orçamento
+                            </label>
+
+                            <select id="creatorBudget">
+
+                                <option value="100">
+                                    R$ 100
+                                </option>
+
+                                <option value="250" selected>
+                                    R$ 250
+                                </option>
+
+                                <option value="500">
+                                    R$ 500
+                                </option>
+
+                                <option value="1000">
+                                    R$ 1.000+
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="button primary full"
+                        id="createProject"
+                    >
+                        ✨ Criar projeto
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="generated-project"
+                id="generatedProject"
+            >
+
+                <div class="generated-icon">
+                    ✦
+                </div>
+
+                <div>
+
+                    <span class="mini-title">
+                        PROJETO CRIADO
+                    </span>
+
+                    <h3 id="generatedName">
+                        Seu personagem
+                    </h3>
+
+                    <p id="generatedInfo"></p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PERSONAGENS ================= -->
+
+        <section
+            class="section"
+            id="personagens"
+        >
+
+            <div class="section-title">
+
+                <span class="number">02</span>
+
+                <div>
+
+                    <span class="mini-title">
+                        EXPLORAR
+                    </span>
+
+                    <h2>
+                        Encontre seu personagem.
+                    </h2>
+
+                    <p>
+                        Pesquise referências e transforme
+                        personagens em projetos de construção.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="search">
+
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Digite o nome de um personagem..."
+                >
+
+                <button id="searchButton">
+                    Buscar
+                </button>
+
+            </div>
+
+
+            <div class="character-grid">
+
+                <article class="character">
+
+                    <div class="character-art cosmic">
+                        ✦
+                    </div>
+
+                    <div class="character-content">
+
+                        <span>EXEMPLO</span>
+
+                        <h3>
+                            Guerreira Cósmica
+                        </h3>
+
+                        <p>
+                            Armadura • Capa • LED
+                        </p>
+
+                        <button class="details">
+                            Ver projeto →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="character">
+
+                    <div class="character-art cyber">
+                        ◈
+                    </div>
+
+                    <div class="character-content">
+
+                        <span>EXEMPLO</span>
+
+                        <h3>
+                            Cyber Explorer
+                        </h3>
+
+                        <p>
+                            Tecnologia • Wig • Props
+                        </p>
+
+                        <button class="details">
+                            Ver projeto →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="character">
+
+                    <div class="character-art fantasy">
+                        ✧
+                    </div>
+
+                    <div class="character-content">
+
+                        <span>EXEMPLO</span>
+
+                        <h3>
+                            Guardião Astral
+                        </h3>
+
+                        <p>
+                            Manto • Acessórios • Estrutura
+                        </p>
+
+                        <button class="details">
+                            Ver projeto →
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONSTRUIR ================= -->
+
+        <section
+            class="section build"
+            id="construir"
+        >
+
+            <div>
+
+                <span class="mini-title">
+                    03 — CONSTRUÇÃO
+                </span>
+
+                <h2>
+                    Do personagem para o mundo real.
+                </h2>
+
+                <p>
+                    O NEBULAB adapta o projeto ao seu nível,
+                    orçamento, materiais, ferramentas e tempo.
+                </p>
+
+
+                <div class="features">
+
+                    <div class="feature">
+
+                        <span>🧰</span>
+
+                        <div>
+                            <strong>Materiais</strong>
+
+                            <p>
+                                Descubra o que você precisa.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <span>📐</span>
+
+                        <div>
+                            <strong>Molde</strong>
+
+                            <p>
+                                Organize cada peça.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <span>📚</span>
+
+                        <div>
+                            <strong>Técnicas</strong>
+
+                            <p>
+                                Aprenda passo a passo.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <span>💡</span>
+
+                        <div>
+                            <strong>Alternativas</strong>
+
+                            <p>
+                                Encontre opções econômicas.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-terminal">
+
+                <div class="terminal-header">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+                <div class="terminal-body">
+
+                    <small>
+                        NEBULAB / PROJECT
+                    </small>
+
+                    <h3>
+                        GUERREIRA_ESTELAR
+                    </h3>
+
+                    <div class="progress">
+                        <div></div>
+                    </div>
+
+                    <div class="check-list">
+
+                        <p>✓ Referências</p>
+                        <p>✓ Materiais</p>
+                        <p>✓ Orçamento</p>
+                        <p>○ Construção</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ORÇAMENTO ================= -->
+
+        <section
+            class="section"
+            id="orcamento"
+        >
+
+            <div class="budget">
+
+                <div>
+
+                    <span class="mini-title">
+                        04 — ORÇAMENTO
+                    </span>
+
+                    <h2>
+                        Faça seu cosplay caber no seu orçamento.
+                    </h2>
+
+                    <p>
+                        Defina quanto você pretende gastar e
+                        organize os recursos do projeto.
+                    </p>
+
+                </div>
+
+
+                <div class="calculator">
+
+                    <label for="budgetValue">
+                        Quanto você pode investir?
+                    </label>
+
+                    <div class="money-input">
+
+                        <span>R$</span>
+
+                        <input
+                            type="number"
+                            id="budgetValue"
+                            value="250"
+                            min="1"
+                        >
+
+                    </div>
+
+                    <button
+                        class="button primary full"
+                        id="calculate"
+                    >
+                        Calcular orçamento
+                    </button>
+
+
+                    <div
+                        class="budget-result"
+                        id="budgetResult"
+                    >
+                        Informe seu orçamento para começar.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONSTELAÇÃO ================= -->
+
+        <section
+            class="section constellation"
+            id="constelacao"
+        >
+
+            <div class="section-title center">
+
+                <span class="number">
+                    05
+                </span>
+
+                <div>
+
+                    <span class="mini-title">
+                        CONSTELAÇÃO
+                    </span>
+
+                    <h2>
+                        Pessoas criando juntas.
+                    </h2>
+
+                    <p>
+                        Compartilhe projetos, técnicas,
+                        tutoriais e descobertas.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="community">
+
+                <div class="community-card">
+
+                    <div>
+                        ✦
+                    </div>
+
+                    <h3>
+                        Projetos
+                    </h3>
+
+                    <p>
+                        Mostre o processo de construção
+                        do seu cosplay.
+                    </p>
+
+                </div>
+
+
+                <div class="community-card">
+
+                    <div>
+                        ⚙
+                    </div>
+
+                    <h3>
+                        Técnicas
+                    </h3>
+
+                    <p>
+                        Compartilhe maneiras diferentes
+                        de construir.
+                    </p>
+
+                </div>
+
+
+                <div class="community-card">
+
+                    <div>
+                        📚
+                    </div>
+
+                    <h3>
+                        Tutoriais
+                    </h3>
+
+                    <p>
+                        Ensine e aprenda com outros criadores.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= NOVA ================= -->
+
+        <section class="nova-section">
+
+            <div class="nova-icon">
+                ✦
+            </div>
+
+            <span class="mini-title">
+                CONHEÇA A NOVA
+            </span>
+
+            <h2>
+                Sua assistente dentro do NEBULAB.
+            </h2>
+
+            <p>
+                A NOVA ajuda a adaptar seu projeto ao
+                seu orçamento, nível e materiais disponíveis.
+            </p>
+
+            <button
+                class="button secondary"
+                id="novaButton"
+            >
+                ✨ Conversar com NOVA
+            </button>
+
+        </section>
+
+
+        <!-- ================= FINAL ================= -->
+
+        <section class="final">
+
+            <div class="big-star">
+                ✦
+            </div>
+
+            <span class="mini-title">
+                SUA PRÓXIMA CRIAÇÃO COMEÇA AQUI
+            </span>
+
+            <h2>
+                Qual personagem
+                você vai criar?
+            </h2>
+
+            <a
+                href="#criar"
+                class="button primary"
+            >
+                ✨ Começar agora
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            ✦ NEBULAB
+        </div>
+
+        <p>
+            Onde ideias ganham forma.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#inicio">Início</a>
+            <a href="#criar">Criar</a>
+            <a href="#personagens">Personagens</a>
+            <a href="#construir">Construir</a>
+            <a href="#constelacao">Constelação</a>
+
+        </div>
+
+        <small>
+            NEBULAB © 2026 — Projeto experimental
+        </small>
+
+    </footer>
+
+
+    <!-- NOTIFICAÇÃO -->
+
+    <div
+        class="notification"
+        id="notification"
+    >
+
+        <span>✦</span>
+
+        <p id="notificationText"></p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
