@@ -614,3 +614,18 @@ result.innerHTML = `
     ✦ Reserva (5%): <strong>R$ ${money(reserve)}</strong>
     <div class="bar-bg"><div class="bar-fill" style="width: 5%"></div></div>
 `;
+if (menuButton && nav) {
+    menuButton.addEventListener("click", () => {
+        const isOpen = nav.classList.toggle("open");
+        menuButton.setAttribute("aria-expanded", isOpen);
+    });
+}
+// Antes (pode gerar erro se a página não tiver o elemento)
+novaButton.addEventListener("click", () => { ... });
+
+// Recomendado
+if (novaButton) {
+    novaButton.addEventListener("click", () => {
+        notify("✦ NOVA: Olá! Estou pronta para ajudar a transformar sua ideia em um projeto.");
+    });
+}
