@@ -1633,3 +1633,37 @@ footer small {
     }
 
 }
+.hero h1 span {
+    display: block;
+    background: linear-gradient(
+        90deg,
+        #fff,
+        #9d7cff,
+        #58a9ff
+    );
+    -webkit-background-clip: text; /* Compatibilidade Webkit */
+    background-clip: text;
+    color: transparent;
+}
+.button,
+.character,
+.community-card,
+.creator-option {
+    will-change: transform;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid #8b5cf6;
+    outline-offset: 3px;
+} 
+@keyframes stars {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-110px); /* Transição contínua para cima */
+    }
+}
