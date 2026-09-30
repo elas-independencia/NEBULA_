@@ -585,3 +585,32 @@ function notify(message) {
         );
 
 }
+const searchInput = document.getElementById("searchInput");
+
+if (searchInput) {
+    searchInput.addEventListener("keydown", event => {
+        if (event.key === "Enter") {
+            searchCharacter();
+        }
+    });
+}
+result.innerHTML = `
+    <strong>✦ Divisão sugerida</strong><br><br>
+    👕 Roupa (30%): <strong>R$ ${money(clothes)}</strong>
+    <div class="bar-bg"><div class="bar-fill" style="width: 30%"></div></div><br>
+    
+    🧰 Materiais (25%): <strong>R$ ${money(materials)}</strong>
+    <div class="bar-bg"><div class="bar-fill" style="width: 25%"></div></div><br>
+    
+    💇 Wig (15%): <strong>R$ ${money(wig)}</strong>
+    <div class="bar-bg"><div class="bar-fill" style="width: 15%"></div></div><br>
+    
+    🎭 Acessórios (15%): <strong>R$ ${money(accessories)}</strong>
+    <div class="bar-bg"><div class="bar-fill" style="width: 15%"></div></div><br>
+    
+    💄 Caracterização (10%): <strong>R$ ${money(makeup)}</strong>
+    <div class="bar-bg"><div class="bar-fill" style="width: 10%"></div></div><br>
+    
+    ✦ Reserva (5%): <strong>R$ ${money(reserve)}</strong>
+    <div class="bar-bg"><div class="bar-fill" style="width: 5%"></div></div>
+`;
